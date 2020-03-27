@@ -7,6 +7,5 @@ def map(array)
     new_array << yield(array[count])
     count += 1
   end
-  pp new_array
   new_array
 end
