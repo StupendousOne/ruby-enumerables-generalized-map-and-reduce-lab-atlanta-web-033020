@@ -1,7 +1,7 @@
 # Your Code Here
 def map(array)
   new_array = []
-  count[0]
+  count = 0
   
   while count < array.length
     new_array << yield(array[count])
