@@ -10,12 +10,12 @@ def map(array)
   new_array
 end
 
-def reduce(array)
-  value = 0
+def reduce(array, src = 0)
+  value = src
   count = 0
   while count < array.length do
-    
+    yield(array, value)
     count += 1
   end
-  
+  value
 end
